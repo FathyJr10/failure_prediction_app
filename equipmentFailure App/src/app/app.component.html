@@ -1,0 +1,30 @@
+<form (ngSubmit)="onSubmit()">
+
+    <div class="container">
+        <div class="title">
+            <span>Failure Prediction</span>
+        </div>
+        
+        <div class="input-container">
+            <input type="number" id="operatingHours" [(ngModel)]="formData.operating_hours"  name="Operating_Hours" placeholder="Operating hours" required>
+        </div>
+        <div class="input-container">
+            <input type="number" id="temperature" [(ngModel)]="formData.temperature" name="Temperature"  placeholder="Temperature" required>
+        </div>
+        <div class="input-container">
+            <input type="number" id="humidity"[(ngModel)]="formData.humidity" name="Humidity" placeholder="Humidity" required>
+        </div>
+        <div class="input-container">
+            <input type="number" id="timeSinceMaintenance"[(ngModel)]="formData.time_since_last_maintenance" name="Time_Since_Last_Maintenance" placeholder="Time since last maintenance" required>
+        </div>
+        <div class="input-container">
+          <button type="submit">Predict</button>
+        </div>
+        <div *ngIf="prediction !== null">
+          <h3 *ngIf="prediction === 1">Equipment Will Fail</h3>
+          <h3 *ngIf="prediction === 0">Equipment Will Not Fail</h3>
+      </div>
+      
+    </div>
+
+  </form>
