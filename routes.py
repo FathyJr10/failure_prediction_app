@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Load the Logistic Regression model
-model = pickle.load(open('ML model/model.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
 
 @app.route('/predict', methods=['POST'])
 def predict():
