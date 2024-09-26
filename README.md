@@ -15,6 +15,8 @@ scikit-learn: For Logistic Regression, data preprocessing, and model evaluation.
 pandas & NumPy: For data handling and manipulation.
 Matplotlib: For data visualization (if required).
 Jupyter Notebook: For running and testing the model.
+Angular : framework used to develop a web app
+TypeScript : language used in development 
 
 # Dataset
 The dataset used for this project contains features such as:
@@ -44,8 +46,8 @@ You can input new feature values (e.g., operating hours, temperature) to predict
 # Results
 The model achieved an accuracy of X% on the test set, demonstrating its potential to predict equipment failures effectively. The classification report and confusion matrix provide deeper insight into precision, recall, and F1-score.
 
-# Further Work
-A mobile application is currently in development to make it easier for users to interact with the model on the go. This app will allow maintenance personnel to input equipment data and receive real-time failure predictions directly from their mobile devices, streamlining the process of preventive maintenance.
+# web Application
+A web application is developed to make it easier for users to interact with the model on the go. This app will allow maintenance personnel to input equipment data and receive real-time failure predictions directly from their mobile devices, streamlining the process of preventive maintenance.
 
 # Contributing
 Contributions are welcome! If you find any issues or have suggestions, feel free to open an issue or submit a pull request.
